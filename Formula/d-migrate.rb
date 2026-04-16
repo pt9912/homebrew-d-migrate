@@ -12,8 +12,9 @@ class DMigrate < Formula
   depends_on "openjdk@21"
 
   def install
-    release_dir = Dir["d-migrate-*"].fetch(0)
-    libexec.install Dir["#{release_dir}/*"]
+    # Homebrew strips the single top-level directory on unpack, so the
+    # archive's bin/ and lib/ land directly in cwd.
+    libexec.install Dir["*"]
     (bin/"d-migrate").write_env_script(
       libexec/"bin/d-migrate",
       Language::Java.overridable_java_home_env("21"),
