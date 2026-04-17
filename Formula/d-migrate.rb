@@ -5,15 +5,13 @@
 class DMigrate < Formula
   desc "Framework fr datenbankunabhngige migrationen und datenverwaltung"
   homepage "https://github.com/pt9912/d-migrate"
-  url "https://github.com/pt9912/d-migrate/releases/download/v0.8.0/d-migrate-0.8.0-homebrew.tar.gz"
-  sha256 "7b2f5ec7846fafa4fb497b1ce60fbfa44c0db3678b3c393098a0909853fa5016"
+  url "https://github.com/pt9912/d-migrate/releases/download/v0.9.0/d-migrate-0.9.0-homebrew.tar.gz"
+  sha256 "883f26e2fc9ad7ae2f7f324068d9bca0442f211c0f55821e42d9f2f25e2efad4"
   license "MIT"
 
   depends_on "openjdk@21"
 
   def install
-    # Homebrew strips the single top-level directory on unpack, so the
-    # archive's bin/ and lib/ land directly in cwd.
     libexec.install Dir["*"]
     (bin/"d-migrate").write_env_script(
       libexec/"bin/d-migrate",
