@@ -5,8 +5,8 @@
 class DMigrate < Formula
   desc "Framework fr datenbankunabhngige migrationen und datenverwaltung"
   homepage "https://github.com/pt9912/d-migrate"
-  url "https://github.com/pt9912/d-migrate/releases/download/v0.9.5/d-migrate-0.9.5-homebrew.tar.gz"
-  sha256 "cb07973fc3ae491de7ad29a7f067c0fa7373cef97e4e56baef497a687a1915bb"
+  url "https://github.com/pt9912/d-migrate/releases/download/v0.9.6/d-migrate-0.9.6-homebrew.tar.gz"
+  sha256 "c3f5a537d68a9c2cb5b02ef733446bebce80d85e39d1e7414c91504134b06db9"
   license "MIT"
 
   depends_on "openjdk@21"
