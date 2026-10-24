@@ -5,8 +5,8 @@
 class DMigrate < Formula
   desc "Database-agnostic schema migrations and data management as cli and mcp server (p"
   homepage "https://github.com/pt9912/d-migrate"
-  url "https://github.com/pt9912/d-migrate/releases/download/v1.8.0/d-migrate-1.8.0-homebrew.tar.gz"
-  sha256 "59f6c2f128835f14f28ed5f5e373dff054fc27181eb987469f020d5b091680b4"  
+  url "https://github.com/pt9912/d-migrate/releases/download/v1.8.1/d-migrate-1.8.1-homebrew.tar.gz"
+  sha256 "96ea87844a7df6140886811322cec0a5544beb9f444eb4b513931e51f4791fce"
   license "MIT"
 
   depends_on "openjdk@21"
